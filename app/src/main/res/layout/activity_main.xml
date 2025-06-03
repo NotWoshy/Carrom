@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F5EC"
+    android:backgroundTint="@null"
+    android:fontFamily="@font/micro5_regular"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:textSize="25dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/micro5_regular"
+        android:gravity="center"
+        android:text="Selecciona un dispositivo!"
+        android:textSize="35sp"/>
+
+    <!-- Arduino -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnArduino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_selector"
+        android:fontFamily="@font/micro5_regular"
+        android:text="Arduino"
+        android:textAllCaps="false"
+        android:textColor="#333"
+        android:textSize="35sp"
+        app:icon="@drawable/ico_arduino"
+        app:iconSize="70dp"
+        app:iconGravity="textStart"
+        app:iconPadding="16dp"
+        app:iconTint="@null"
+        app:cornerRadius="0dp"
+        app:backgroundTint="@null"
+        android:foreground="?attr/selectableItemBackground"/>
+
+    <!-- ESP32 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnESP32"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_selector"
+        android:fontFamily="@font/micro5_regular"
+        android:text="ESP32"
+        android:textAllCaps="false"
+        android:textColor="#333"
+        android:textSize="35sp"
+        app:icon="@drawable/ico_esp"
+        app:iconSize="55dp"
+        app:iconGravity="textStart"
+        app:iconPadding="16dp"
+        app:iconTint="@null"
+        app:cornerRadius="0dp"
+        app:backgroundTint="@null"
+        android:foreground="?attr/selectableItemBackground"/>
+
+    <!-- RaspberryPi -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRaspberry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_selector"
+        android:fontFamily="@font/micro5_regular"
+        android:text="Raspberry Pi"
+        android:textAllCaps="false"
+        android:textColor="#333"
+        android:textSize="30sp"
+        app:icon="@drawable/ico_rsp"
+        app:iconSize="60dp"
+        app:iconGravity="textStart"
+        app:iconPadding="15dp"
+        app:iconTint="@null"
+        app:cornerRadius="0dp"
+        app:backgroundTint="@null"
+        android:foreground="?attr/selectableItemBackground"/>
+
+    <!-- Amiba2 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMaxV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_selector"
+        android:fontFamily="@font/micro5_regular"
+        android:text="Amiba2"
+        android:textAllCaps="false"
+        android:textColor="#333"
+        android:textSize="35sp"
+        app:icon="@drawable/ico_intesc"
+        app:iconSize="70dp"
+        app:iconGravity="textStart"
+        app:iconPadding="20dp"
+        app:iconTint="@null"
+        app:cornerRadius="0dp"
+        app:backgroundTint="@null"
+        android:foreground="?attr/selectableItemBackground"/>
+
+</LinearLayout>

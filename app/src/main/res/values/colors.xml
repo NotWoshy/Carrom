@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="sensor_on">#e38fed</color>
+    <color name="sensor_off">#8d87e9</color>
+</resources>
