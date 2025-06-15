@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F9F5EC"
+    android:backgroundTint="@null"
+    tools:context=".RaspberryActivity">
+
+    <TextView
+        android:id="@+id/txtRaspberry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/micro5_regular"
+        android:gravity="center"
+        android:text="Esperando conexión..."
+        android:textColor="#dfa8ec"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/txtSensorStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sensor de proximidad: Activado!"
+        android:textColor="#dfa8ec"
+        android:fontFamily="@font/micro5_regular"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- Joystick para controlar dirección y velocidad -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <io.github.controlwear.virtual.joystick.android.JoystickView
+                android:id="@+id/joystickView"
+                android:layout_width="261dp"
+                android:layout_height="263dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/joystick_base"
+                custom:JV_buttonImage="@drawable/joystick"
+                custom:JV_buttonSizeRatio="20%" />
+        </LinearLayout>
+
+        <!-- Botón del sensor -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnToggleSensor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@null"
+                android:src="@drawable/ico_sensor_on" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

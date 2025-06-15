@@ -24,6 +24,7 @@
 
         <activity android:name=".ESP32Activity" />
         <activity android:name=".ArduinoActivity" />
+        <activity android:name=".RaspberryActivity" />
 
         <activity
             android:name=".MainActivity"
