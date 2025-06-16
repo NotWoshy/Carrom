@@ -99,8 +99,10 @@ class RaspberryActivity: AppCompatActivity() {
 
         Thread {
             try {
-                val uuid = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB")
-                bluetoothSocket = device.createRfcommSocketToServiceRecord(uuid)
+                // Usar canal RFCOMM 1 directamente (igual que Serial Bluetooth Terminal)
+                val method = device.javaClass.getMethod("createRfcommSocket", Int::class.javaPrimitiveType)
+                bluetoothSocket = method.invoke(device, 1) as BluetoothSocket
+
                 bluetoothAdapter?.cancelDiscovery()
                 bluetoothSocket?.connect()
 
