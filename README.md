@@ -9,8 +9,8 @@ Desarrollada durante la estancia del servicio social en la **Escuela Superior de
 
 ## Autores
 
-- [@NotWoshy](https://www.github.com/octokatherine)
-- [@xVectorzz](https://www.github.com/octokatherine)
+- [@NotWoshy](https://github.com/NotWoshy)
+- [@xVectorzz](https://github.com/xVectorzz)
 
 
 ## Características
