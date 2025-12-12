@@ -5,14 +5,6 @@ Aplicación móvil hecha usando el lenguaje Kotlin para la conexión bluetooth y
 
 Desarrollada durante la estancia del servicio social en la **Escuela Superior de Cómputo del Insituto Politécnico Nacional**.
 
-
-
-## Autores
-
-- [@NotWoshy](https://github.com/NotWoshy)
-- [@xVectorzz](https://github.com/xVectorzz)
-
-
 ## Características
 
 - Únicamente para dispositivos android
