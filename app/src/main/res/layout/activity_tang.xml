@@ -7,10 +7,10 @@
     android:padding="16dp"
     android:background="#F9F5EC"
     android:backgroundTint="@null"
-    tools:context=".ArduinoActivity">
+    tools:context=".TangNanoActivity">
 
     <TextView
-        android:id="@+id/txtArduino"
+        android:id="@+id/txtTang"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"

@@ -86,20 +86,20 @@
         app:backgroundTint="@null"
         android:foreground="?attr/selectableItemBackground"/>
 
-    <!-- Amiba2 -->
+    <!-- Tang Nano -->
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnMaxV"
+        android:id="@+id/btnTangNano"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:background="@drawable/button_selector"
         android:fontFamily="@font/micro5_regular"
-        android:text="Amiba2"
+        android:text="Tang Nano 9K"
         android:textAllCaps="false"
         android:textColor="#333"
         android:textSize="35sp"
-        app:icon="@drawable/ico_intesc"
-        app:iconSize="70dp"
+        app:icon="@drawable/ico_tang"
+        app:iconSize="50dp"
         app:iconGravity="textStart"
         app:iconPadding="20dp"
         app:iconTint="@null"

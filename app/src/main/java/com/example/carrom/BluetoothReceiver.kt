@@ -10,7 +10,6 @@ class BluetoothReceiver(private val onDeviceFound: (BluetoothDevice) -> Unit) : 
     override fun onReceive(context: Context?, intent: Intent?) {
         if (intent?.action == BluetoothDevice.ACTION_FOUND) {
             val device: BluetoothDevice? = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE)
-
             device?.let(onDeviceFound)
         }
     }

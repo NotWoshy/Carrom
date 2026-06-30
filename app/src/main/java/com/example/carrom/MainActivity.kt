@@ -66,8 +66,8 @@ class MainActivity : AppCompatActivity(), BluetoothDeviceDialog.BluetoothDeviceD
             showDeviceDialog()
         }
 
-        findViewById<Button>(R.id.btnMaxV).setOnClickListener {
-            selectedTarget = "MaxV"
+        findViewById<Button>(R.id.btnTangNano).setOnClickListener {
+            selectedTarget = "Tang Nano"
             showDeviceDialog()
         }
 
@@ -124,7 +124,7 @@ class MainActivity : AppCompatActivity(), BluetoothDeviceDialog.BluetoothDeviceD
             "ESP32" -> Intent(this, ESP32Activity::class.java)
             "Arduino" -> Intent(this, ArduinoActivity::class.java)
             "Raspberry" -> Intent(this, RaspberryActivity::class.java)
-            "MaxV" -> Intent(this, MaxVActivity::class.java)
+             "Tang Nano" -> Intent(this, TangNanoActivity::class.java)
             else -> return
         }
 
